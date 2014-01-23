@@ -9,27 +9,28 @@ not here -->
 <b>_Метеор - это простое окружение для разработки современных веб-сайтов.
 Что раньше занимало недели, даже с лучшими инструментами, сейчас занимает часы с Meteor._</b>
 
-The web was originally designed to work in the same way that mainframes
-worked in the 70s.  The application server rendered a screen and sent it
-over the network to a dumb terminal. Whenever the user did anything,
-that server rerendered a whole new screen. This model served the Web
-well for over a decade. It gave rise to LAMP, Rails, Django, PHP.
+Изначально принцип работы web таким же, как и у мэйнфреймов в 70-х.
+Сервер приложения отрисовывает изображение и отправляет его на терминал. 
+При любых действиях пользователя сервре полностью отрисовывает изображение.
+Эта модель хорошо служила веб долгое время. По этому принципу работают 
+LAMP, Rails, Django, PHP.
 
-But the best teams, with the biggest budgets and the longest schedules,
-now build applications in JavaScript that run on the client.  These apps
-have stellar interfaces.  They don't reload pages.  They are reactive:
-changes from any client immediately appear on everyone's screen.
+Лучшие команды, с наибольшим бюджетом и с долгосрочными графиками 
+разрабатывают приложения на JavaScript, которые исполняются на клиенте.
+Эти приложения имеют крутой интерфейс. Они не перезагружают страницу.
+Они реактивные: изменения у одного клиента моментально отображаются на 
+экранах других.
 
-They've built them the hard way.  Meteor makes it an order of
-magnitude simpler, and a lot more fun.  You can build a complete
-application in a weekend, or a sufficiently caffeinated hackathon.  No
-longer do you need to provision server resources, or deploy API
-endpoints in the cloud, or manage a database, or wrangle an ORM layer,
-or swap back and forth between JavaScript and Ruby, or broadcast data
-invalidations to clients.
+Разрабатывать их было трудно. Meteor делает разработку таких приложений
+на порядок проще и намного веселее. Вы можете создать работающее приложение
+за выходные или на хакатоне. Вам больше не нужно предоставлять серверные
+ресурсы, или deploy API endpoints in the cloud, или управлять базой данных,
+или спорить об ORM, или переключать контекст между JavaScript and Ruby
+, или пробрасывать ошибки валидации клиентам.
 
-Meteor is a work in progress, but we hope it shows the direction of
-our thinking.  We'd love to hear your feedback.
+Работа над Meteor еще в процессе, но мы надеемся, что вступление
+показало направление наших мыслей. Мы очень хотим получать отзывы
+от вас.
 
 
 ## Quick start!
@@ -40,19 +41,19 @@ white -->
 The following works on all [supported
 platforms](https://github.com/meteor/meteor/wiki/Supported-Platforms).
 
-Install Meteor:
+Установка Meteor:
 
 <pre>
 $ curl https://install.meteor.com | /bin/sh
 </pre>
 
-Create a project:
+Создание проекта:
 
 <pre>
 $ meteor create myapp
 </pre>
 
-Run it locally:
+Запустить локально:
 
 <pre>
 $ cd myapp
@@ -60,26 +61,25 @@ $ meteor
 =&gt; Meteor server running on: http://localhost:3000/
 </pre>
 
-Unleash it on the world (on a free server we provide):
+Показать приложение миру (на бесплатных серверах, которые мы предоставляем):
 
 <pre>
 $ meteor deploy myapp.meteor.com
 </pre>
 
-<h2 id="sevenprinciples">Seven Principles of Meteor</h2>
+<h2 id="sevenprinciples">Семь принципов Meteor</h2>
 
 <!-- wire with [1,2,3] on it -->
-- _Data on the Wire_. Don't send HTML over the network. Send data and
-let the client decide how to render it.
+- _Данные по проводу_. Не отправляйте HTML по сети. Отправляйте данные
+и позвольте клиенту решать как их отображать.
 
 <!-- two people, one speech bubble coming out of both of their mouths,
 containing '{}' -->
-- _One Language._ Write both the client and the server parts of your
-interface in JavaScript.
+- _Один язык._ Пишите клиентскую и серверную часть на JavaScript.
 
 <!-- globe, with the same database icon in US and Russia -->
-- _Database Everywhere_. Use the same transparent API to access your
-database from the client or the server.
+- _База данных везде_. Используйте одинаковый API для доступа к 
+базе данных на клиенте и на сервере
 
 <!-- clock with zero time elapsed. or clock on left with zero time
 elapsed, horizontal bold line to a clock with zero time elapsed, but a
