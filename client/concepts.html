@@ -1,11 +1,11 @@
 <template name="concepts">
 
-<h1 id="concepts">Concepts</h1>
+<h1 id="concepts">Концепции</h1>
 
 We've written our fair share of single-page JavaScript applications by hand.
-Writing an entire application in one language (JavaScript) with one
-data format (JSON) is a real joy.  Meteor is everything we wanted
-when writing those apps.
+Разработка приложений на одном языке(JavaScript) с использование только
+одного формата данных(JSON) настоящее наслаждение. Meteor включает все,
+что мы хотим, при написании таких приложений.
 
 {{> whatismeteor }}
 {{> structure }}
@@ -23,24 +23,23 @@ when writing those apps.
 
 {{#better_markdown}}
 
-<h2 id="whatismeteor">What is Meteor?</h2>
+<h2 id="whatismeteor">Что такое Meteor?</h2>
 
-Meteor is two things:
+Meteor - это 2 вещи:
 
-* A _library of packages_: pre-written, self-contained modules that
-you might need in your app.<br>
-There are about a dozen core Meteor
-packages that most any app will use (for example `webapp`, which
-handles incoming HTTP connections, and `templating`, which lets you
-make HTML templates that automatically update live as data changes).
-Then there are optional packages like `email`, which lets your app
-send emails, or the Meteor Accounts series (`account-password`,
-`accounts-facebook`, `accounts-ui`, and others) which provide a
-full-featured user account system that you can drop right into your
-app. And beyond these "official" packages, there are hundreds of
-community-written packages in [Atmosphere](https://atmosphere.meteor.com/),
-one of which might do just what you need.
-
+* _Набор библиотек_: самостоятельных модулей, которые могут
+понадобится при написании вашего приложения.<br>
+Meteor содержит множество пакетов, которые могут пригодится
+(например `webapp`, который обрабатывает входящие HTTP соединения,
+`templating`, которые позволяет вашим HTML шаблонам автоматически
+обновлятся при изменении данных.)
+Можно подключить такие пакеты как: `email`, который позволяет вашему
+приложению отправлять письма, или Meteor Accounts (`account-password`,
+`accounts-facebook`, `accounts-ui`, и другие) которые обеспечивают
+систему ведения аккаунтов. А также помимо "официальных" пакетов,
+есть множество разработанных сообществом. Их можно найти
+на [Atmosphere](https://atmosphere.meteor.com/).
+    
 * A _command-line tool_ called `meteor`.<br>
 `meteor` is a build tool analogous to `make`, `rake`, or the non-visual parts of
 Visual Studio. It gathers up all of the source files and assets in your
